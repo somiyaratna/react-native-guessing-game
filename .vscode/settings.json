@@ -1,0 +1,97 @@
+{
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.tokenColorCustomizations": {
+    "[Monokai Pro (Filter Spectrum)]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "string",
+            "keyword",
+            "variable",
+            "entity.name.function",
+            "entity.name.type",
+            "entity.other.inherited-class",
+            "storage.type",
+            "storage.modifier",
+            "support.class",
+            "support.type",
+            "meta.property-list",
+            "markup.italic"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": ["variable.other.readwrite"],
+          "settings": {
+            "foreground": "#97c9fe"
+          }
+        },
+        {
+          "scope": ["variable.other.readwrite.js.jsx"],
+          "settings": {
+            "foreground": "#d778ff"
+          }
+        },
+        {
+          "scope": ["variable.object.property.js.jsx"],
+          "settings": {
+            "foreground": "#fffb8c"
+          }
+        },
+        {
+          "scope": ["meta.object.member"],
+          "settings": {
+            "foreground": "#98ffd9"
+          }
+        },
+        {
+          "scope": ["variable.other"],
+          "settings": {
+            "foreground": "#cb6aff"
+          }
+        }
+      ]
+    }
+  },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "HTML",
+    "\"plaintext\"": "\"javascript\""
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorCustomizations": {
+    "editor.background": "#1e1e1e",
+    "editorGutter.background": "#1b1b1b",
+    "sideBar.background": "#171717"
+  },
+  "eslint.rules.customizations": [
+    {
+      "rule": "no-unused-vars",
+      "severity": "warn"
+    },
+    {
+      "rule": "react/prop-types",
+      "severity": "off"
+    }
+  ],
+  "git.autofetch": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "reactSnippets.settings.prettierEnabled": true
+}
