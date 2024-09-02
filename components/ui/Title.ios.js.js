@@ -15,9 +15,13 @@ const styles = StyleSheet.create({
     // fontWeight: "bold",
     color: Colors.primary700,
     textAlign: "center",
-    borderWidth: 2,
+    // borderWidth: Platform.OS === "android" ? 2 : 0,
+    // borderWidth: Platform.select({ android: 2, ios: 0 }),
+
     borderColor: Colors.primary700,
+
     padding: 12,
-    marginTop: 100,
+    maxWidth: "80%",
+    width: 300,
   },
 });

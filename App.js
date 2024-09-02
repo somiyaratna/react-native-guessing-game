@@ -9,6 +9,7 @@ import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 import Colors from "./constants/colors";
 import GameOverScreen from "./screens/GameOverScreen";
+import { StatusBar } from "expo-status-bar";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -67,26 +68,29 @@ const App = () => {
   }
 
   return (
-    <LinearGradient
-      colors={[Colors.accent500, Colors.primary700]}
-      style={styles.rootScreen}
-    >
-      <ImageBackground
-        // @ts-ignore
-        source={require("./assets/images/background.png")}
-        resizeMode="cover"
+    <>
+      <StatusBar style="dark" />
+      <LinearGradient
+        colors={[Colors.accent500, Colors.primary700]}
         style={styles.rootScreen}
-        imageStyle={styles.backgroundImage}
       >
-        <SafeAreaView style={styles.rootScreen}>
-          {fontsLoaded ? (
-            screen
-          ) : (
-            <Ionicons name="dice" size={24} color={"black"} />
-          )}
-        </SafeAreaView>
-      </ImageBackground>
-    </LinearGradient>
+        <ImageBackground
+          // @ts-ignore
+          source={require("./assets/images/background.png")}
+          resizeMode="cover"
+          style={styles.rootScreen}
+          imageStyle={styles.backgroundImage}
+        >
+          <SafeAreaView style={styles.rootScreen}>
+            {fontsLoaded ? (
+              screen
+            ) : (
+              <Ionicons name="dice" size={24} color={"black"} />
+            )}
+          </SafeAreaView>
+        </ImageBackground>
+      </LinearGradient>
+    </>
   );
 };
 
